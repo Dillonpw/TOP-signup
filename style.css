@@ -7,6 +7,17 @@ body {
     flex-flow: row wrap;
     height: 100vh;
 }
+
+#title{
+    color: white;
+    background-color: black;
+    opacity: 50%;
+    font-size: 80px;
+    display:flex;
+
+}
+
+
 #image {
     background-image: url(https://source.unsplash.com/gtDjIFsZT8g);
     background-size: auto;
@@ -20,10 +31,11 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    background-color: rgb(215, 215, 213);
 }
 
 #header {
-    background-color: azure;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,4 +47,10 @@ form {
     display: flex;
     flex-direction: column;
     padding: 3rem;
+}
+
+
+input{
+    height: 20px;
+
 }
