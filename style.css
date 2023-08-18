@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url(https://source.unsplash.com/gtDjIFsZT8g);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content-right {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+height: 100vh;
+width: 60vw;
+}
+
+#header {
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 8rem;
+}
+
+form {
+    background-color: rgb(159, 159, 159);
+    display: flex;
+    flex-direction: column;
+    padding: 8rem;
+}
