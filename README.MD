@@ -1,1 +1,1 @@
-Challenging myself to style this entirely with tailwind to build some confidence with the framework.
+The Odin Project sign up page. goal is to have several required fields and validate matching passwords. To begin I chose to build this with entirely tailwid but ran into trouble and decided to get the project out there with standard css instead.
