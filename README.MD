@@ -1,0 +1,1 @@
+Challenging myself to style this entirely with tailwind to build some confidence with the framework.
