@@ -133,7 +133,12 @@ input:focus{
 
 #login a{
     text-decoration: none;
-
 }
 
+
+@media (max-width: 375px){
+    body{ display: flex;
+        flex-direction: column;
+
+}
 
