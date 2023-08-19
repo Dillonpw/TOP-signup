@@ -1,3 +1,7 @@
+*{
+    font-family: amatic sc;
+}
+
 body {
     margin: 0;
     height: 100vh;
@@ -19,7 +23,7 @@ body {
     color: white;
     background-color: black;
     opacity: 50%;
-    font-size: 50px;
+    font-size: 70px;
     width: 100%;
     text-align: center;
 }
@@ -45,22 +49,25 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem
+    padding: .5rem 3rem;
+    font-size: 2rem;
 }
 #sign-header{
     background-color: rgb(159, 159, 159);
     margin-bottom: 0;
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
+    font-size: 2rem;
+
 }
 form {
     background-color: rgb(159, 159, 159);
     width: 60vw;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding-left: 1.5rem;
     padding-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5em;
+    gap: 1em;
 }
 
 .input-row {
@@ -75,4 +82,23 @@ label {
 input {
     height: 20px;
     width: 80%;
+}
+
+#footer{
+    font-size: 1.5rem;
+}
+
+#submit{
+    background-color: darkgreen;
+    color: white;
+    padding: 1rem 2.5rem;
+    margin: 1rem;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+#login{
+    padding: 1rem;
+    margin-top: 0;
 }
