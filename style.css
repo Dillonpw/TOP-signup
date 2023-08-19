@@ -5,6 +5,7 @@
 body {
     margin: 0;
     height: 100vh;
+
 }
 
 .content {
@@ -26,6 +27,8 @@ body {
     font-size: 70px;
     width: 100%;
     text-align: center;
+    padding: 2rem;
+    
 }
 
 #image {
@@ -59,7 +62,7 @@ body {
     font-size: 2rem;
 
 }
-form {
+#sign-up {
     background-color: rgb(159, 159, 159);
     width: 60vw;
     font-size: 1.5rem;
@@ -68,6 +71,8 @@ form {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
+    -webkit-box-shadow: 5px 6px 9px -3px #000000; 
+    box-shadow: 5px 6px 9px -3px #000000;
 }
 
 .input-row {
@@ -80,8 +85,23 @@ label {
 }
 
 input {
-    height: 20px;
+    height: 28px;
     width: 80%;
+    -webkit-box-shadow: 4px 4px 6px 2px rgba(0,0,0,0.34); 
+    box-shadow: 4px 4px 6px 2px rgba(0,0,0,0.34);
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    padding-left: 6px
+}
+input:hover{
+    transform: scale(1.1);
+}
+
+input:focus{
+    transform: scale(1.1);
+    border: none;
+    outline: 2px solid black;
+    padding: .25rem;
 }
 
 #footer{
@@ -91,14 +111,29 @@ input {
 #submit{
     background-color: darkgreen;
     color: white;
-    padding: 1rem 2.5rem;
+    padding: .75rem 2.5rem;
     margin: 1rem;
     margin-bottom: 0;
     font-size: 1.5rem;
     border-radius: 1rem;
 }
 
+#submit:hover{
+    background-color: rgb(1, 83, 1);
+}
+
+#submit:active{
+    transform:scale(.97)
+}
+
 #login{
     padding: 1rem;
     margin-top: 0;
 }
+
+#login a{
+    text-decoration: none;
+
+}
+
+
