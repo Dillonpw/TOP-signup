@@ -2,23 +2,27 @@ body {
     margin: 0;
     height: 100vh;
 }
+
 .content {
     display: flex;
     flex-flow: row wrap;
     height: 100vh;
 }
 
-#title{
+#image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
     color: white;
     background-color: black;
     opacity: 50%;
     font-size: 50px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
+    width: 100%;
+    text-align: center;
 }
-
 
 #image {
     background-image: url(https://source.unsplash.com/gtDjIFsZT8g);
@@ -37,25 +41,38 @@ body {
 }
 
 #header {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1rem
 }
-
+#sign-header{
+    background-color: rgb(159, 159, 159);
+    margin-bottom: 0;
+    padding: 1.5rem;
+}
 form {
     background-color: rgb(159, 159, 159);
-    display: flex;
     width: 60vw;
-    flex-flow: row wrap;
-    gap: 1rem;
     font-size: 1rem;
-    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
 }
 
+.input-row {
+    display: flex;
+    flex-direction: column;
+}
 
+label {
+    display: block;
+}
 
-input{
+input {
     height: 20px;
+    width: 80%;
 }
