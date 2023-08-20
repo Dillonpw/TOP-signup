@@ -1,3 +1,7 @@
+:root{
+    --bg-color: rgb(215, 215, 213);
+}
+
 *{
     font-family: amatic sc;
 }
@@ -44,7 +48,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    background-color: rgb(215, 215, 213);
+    background-color:var(--bg-color);
 }
 
 #header {
@@ -106,11 +110,15 @@ input:focus{
 
 #footer{
     font-size: 1.5rem;
+    background-color: var(--bg-color);
+    width: 60vw;
+    padding-left: 0%;
+    margin-left: 0%;
 }
 
 #submit{
     background-color: darkgreen;
-    color: white;
+    color: var(--bg-color);
     padding: .75rem 2.5rem;
     margin: 1rem;
     margin-bottom: 0;
@@ -120,6 +128,7 @@ input:focus{
 
 #submit:hover{
     background-color: rgb(1, 83, 1);
+    cursor:pointer;
 }
 
 #submit:active{
@@ -137,8 +146,8 @@ input:focus{
 
 
 @media (max-width: 375px){
-    body{ display: flex;
+    .content{ display: flex;
         flex-direction: column;
 
 }
-
+}
