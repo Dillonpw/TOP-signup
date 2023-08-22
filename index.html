@@ -36,26 +36,29 @@
                 <h2 id="sign-header">Let's do this!</h2>
                 <form action="#" id="sign-up">
                     <div class="input-row">
-                        <label for="first-name">First Name</label>
+                        <label for="fName">First Name</label>
                         <input
-                            id="first-name"
+                            id="fName"
                             name="name"
                             type="text"
                             required
                         />
+                        <div class="fNameError"></div>
                     </div>
                     <div class="input-row">
-                        <label for="last-name">Last Name</label>
+                        <label for="lName">Last Name</label>
                         <input
-                            id="last-name"
+                            id="lName"
                             name="name"
                             type="text"
                             required
                         />
+                        <div class="lNameError"></div>
                     </div>
                     <div class="input-row">
                         <label for="email">Email Address</label>
                         <input id="email" name="email" type="email" required />
+                        <div class="emailError"></div>
                     </div>
                     <div class="input-row">
                         <label for="phone-number">Phone Number</label>
@@ -63,7 +66,11 @@
                             id="phone-number"
                             name="phone-number"
                             type="telephpone"
+                            minlength="9"
+                            maxlength="10"
+                            required
                         />
+                        <div class="phoneError"></div>
                     </div>
                     <div class="input-row">
                         <label for="password">Password</label>
@@ -73,18 +80,21 @@
                             type="password"
                             required
                         />
+                        <div class="passwordError"></div>
                     </div>
                     <div class="input-row">
                         <label for="password-verify">Re-enter Password</label>
                         <input
                             id="password-verify"
                             name="password-verify"
+                            type="password"
                             required
                         />
+                        <div class="passwordVerifyError"></div>
                     </div>
 
                     <div id="footer">
-                        <button id="submit" method="post" type="submit">
+                        <button id="submit" method="get" type="submit">
                             Create Account
                         </button>
                         <p id="login">
@@ -96,4 +106,5 @@
             </div>
         </div>
     </body>
+    <script src="main.js" defer></script>
 </html>
