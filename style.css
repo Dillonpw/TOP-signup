@@ -117,8 +117,9 @@ input:valid{
 }
 
 .fNameError{
-    font-size: 8px;
+    font-size: 1rem;
     color: var(--invalid-color);
+    font-weight:900;
 }
 
 #footer {

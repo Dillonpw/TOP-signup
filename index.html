@@ -12,6 +12,7 @@
             href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:wght@700&family=Orbitron&family=Poppins:wght@400;500;600;700&family=Rowdies:wght@700&family=Ubuntu:ital,wght@0,400;1,700&display=swap"
             rel="stylesheet"
         />
+        <script src="main.js" defer></script>
         <title>Sign-Up</title>
     </head>
     <body>
@@ -34,7 +35,7 @@
                     </p>
                 </div>
                 <h2 id="sign-header">Let's do this!</h2>
-                <form action="#" id="sign-up">
+                <form action="/" method="GET" id="sign-up">
                     <div class="input-row">
                         <label for="fName">First Name</label>
                         <input
@@ -65,7 +66,7 @@
                         <input
                             id="phone-number"
                             name="phone-number"
-                            type="telephpone"
+                            type="tel"
                             minlength="9"
                             maxlength="10"
                             required
@@ -94,7 +95,7 @@
                     </div>
 
                     <div id="footer">
-                        <button id="submit" method="get" type="submit">
+                        <button id="submit" type="submit">
                             Create Account
                         </button>
                         <p id="login">
@@ -105,6 +106,6 @@
                 </form>
             </div>
         </div>
+    
     </body>
-    <script src="main.js" defer></script>
 </html>
