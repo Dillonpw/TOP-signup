@@ -11,6 +11,7 @@
 body {
     margin: 0;
     height: 100vh;
+    width: 100vw;
 }
 
 .content {
@@ -44,6 +45,7 @@ body {
 }
 
 #content-right {
+    height: 100vh;
     width: 60vw;
     display: flex;
     flex-flow: column nowrap;
@@ -58,6 +60,7 @@ body {
     align-items: center;
     padding: 0.5rem 3rem;
     font-size: 2rem;
+
 }
 #sign-header {
     background-color: rgb(159, 159, 159);
@@ -65,6 +68,7 @@ body {
     padding: 2rem 1.5rem;
     font-size: 2rem;
 }
+
 #sign-up {
     background-color: rgb(159, 159, 159);
     width: 60vw;
@@ -108,18 +112,72 @@ input:focus {
     padding: 0.25rem;
 }
 
-input:focus:invalid{
+input:focus:invalid {
     background-color: var(--invalid-color);
 }
 
-input:valid{
+input:valid {
     background-color: var(--valid-color);
 }
 
-.fNameError{
+.fNameError {
     font-size: 1rem;
-    color: var(--invalid-color);
-    font-weight:900;
+    color: white;
+    font: weight 800px;
+    background-color: var(--invalid-color);
+    width: 60%;
+    border-radius: 0.5rem;
+    padding-left: 4px;
+}
+
+.lNameError {
+    font-size: 1rem;
+    color: white;
+    font: weight 800px;
+    background-color: var(--invalid-color);
+    width: 60%;
+    border-radius: 0.5rem;
+    padding-left: 4px;
+}
+
+.emailError {
+    font-size: 1rem;
+    color: white;
+    font: weight 800px;
+    background-color: var(--invalid-color);
+    width: 60%;
+    border-radius: 0.5rem;
+    padding-left: 4px;
+}
+
+.phoneError {
+    font-size: 1rem;
+    color: white;
+    font: weight 800px;
+    background-color: var(--invalid-color);
+    width: 60%;
+    border-radius: 0.5rem;
+    padding-left: 4px;
+}
+
+.passwordError {
+    font-size: 1rem;
+    color: white;
+    font: weight 800px;
+    background-color: var(--invalid-color);
+    width: 60%;
+    border-radius: 0.5rem;
+    padding-left: 4px;
+}
+
+.passwordVerifyError {
+    font-size: 1rem;
+    color: white;
+    font: weight 800px;
+    background-color: var(--invalid-color);
+    width: 60%;
+    border-radius: 0.5rem;
+    padding-left: 4px;
 }
 
 #footer {

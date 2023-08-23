@@ -26,7 +26,7 @@
                         <b
                             >This is not a real online service! You know you
                             need something like this in your life to help you
-                            realze your deepest dreams. Sign up <i>now</i> to
+                            realze your deepest dreams. Sign up <i>now </i> to
                             get started.</b
                         >
                     </p>
@@ -35,25 +35,15 @@
                     </p>
                 </div>
                 <h2 id="sign-header">Let's do this!</h2>
-                <form action="/" method="GET" id="sign-up">
+                <form action="/" method="GET" id="sign-up" novalidate>
                     <div class="input-row">
                         <label for="fName">First Name</label>
-                        <input
-                            id="fName"
-                            name="name"
-                            type="text"
-                            required
-                        />
+                        <input id="fName" name="name" type="text" required />
                         <div class="fNameError"></div>
                     </div>
                     <div class="input-row">
                         <label for="lName">Last Name</label>
-                        <input
-                            id="lName"
-                            name="name"
-                            type="text"
-                            required
-                        />
+                        <input id="lName" name="name" type="text" required />
                         <div class="lNameError"></div>
                     </div>
                     <div class="input-row">
@@ -79,6 +69,7 @@
                             id="password"
                             name="password"
                             type="password"
+                            minlength="8"
                             required
                         />
                         <div class="passwordError"></div>
@@ -89,6 +80,7 @@
                             id="password-verify"
                             name="password-verify"
                             type="password"
+                            minlength="8"
                             required
                         />
                         <div class="passwordVerifyError"></div>
@@ -106,6 +98,5 @@
                 </form>
             </div>
         </div>
-    
     </body>
 </html>
