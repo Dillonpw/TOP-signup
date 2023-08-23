@@ -41,12 +41,12 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    width: 40vw;
+    width: 37vw;
 }
 
 #content-right {
     height: 100vh;
-    width: 60vw;
+    width: 63vw;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -71,7 +71,7 @@ body {
 
 #sign-up {
     background-color: rgb(159, 159, 159);
-    width: 60vw;
+    width: 63vw;
     font-size: 1.5rem;
     padding-left: 1.5rem;
     padding-bottom: 3rem;
@@ -183,9 +183,8 @@ input:valid {
 #footer {
     font-size: 1.5rem;
     background-color: var(--bg-color);
-    width: 60vw;
+    width: 56vw;
     padding-left: 0%;
-    margin-left: 0%;
 }
 
 #submit {
@@ -217,7 +216,7 @@ input:valid {
 }
 
 @media (max-width: 375px) {
-    .content {
+    body {
         display: flex;
         flex-direction: column;
     }
