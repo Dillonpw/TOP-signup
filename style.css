@@ -17,9 +17,8 @@
 
 body {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
-
+    height: 100%;
+    width: 100%;
 }
 
 .content {
@@ -52,6 +51,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 34vw;
+    height: 100vh;
 }
 
 #content-right {
@@ -71,6 +71,7 @@ body {
     padding: 0.5rem 3rem;
     font-size: 2rem;
 }
+
 #sign-header {
     background-color: rgb(159, 159, 159);
     margin-bottom: 0;
@@ -81,8 +82,8 @@ body {
 #sign-up {
     background-color: rgb(159, 159, 159);
     width: 100%;
+    height: 100%;
     font-size: 1.5rem;
-    padding-bottom: 3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1em;
@@ -118,7 +119,6 @@ input:focus {
     transform: scale(1.1);
     border: none;
     outline: 2px solid black;
-
 }
 
 input:focus:invalid {
@@ -218,7 +218,7 @@ input:valid {
     transform: scale(0.97);
 }
 
-#login{
+#login {
     text-align: center;
 }
 
