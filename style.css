@@ -6,6 +6,7 @@
 
 * {
     font-family: amatic sc;
+    box-sizing: border-box;
 }
 
 body {
@@ -43,12 +44,12 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    width: 37vw;
+    width: 34vw;
 }
 
 #content-right {
     height: 100vh;
-    width: 63vw;
+    width: 66vw;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -72,7 +73,7 @@ body {
 
 #sign-up {
     background-color: rgb(159, 159, 159);
-    width: 63vw;
+    width: 100%;
     font-size: 1.5rem;
     padding-left: 1.5rem;
     padding-bottom: 3rem;
@@ -94,7 +95,7 @@ label {
 
 input {
     height: 28px;
-    width: 80%;
+    width: calc(80% - 12px); 
     -webkit-box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.34);
     box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.34);
     border-radius: 0.5rem;
@@ -185,6 +186,8 @@ input:valid {
     font-size: 1.5rem;
     background-color: var(--bg-color);
     width: 58vw;
+    display: block;
+    border-radius: 1rem;
 
 }
 
@@ -219,6 +222,7 @@ input:valid {
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
+        width:100%;
     
     }
 
@@ -243,21 +247,23 @@ input:valid {
     }
 
     #title {
-        padding: 2rem 0;
+        padding: 0;
         position: absolute;
         top:0;
+        text-align: center;
     }
 
     #footer{
         display:flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 2.5rem;
+        padding: 1rem 8rem;
     }
 
     #submit{
-        padding: 1rem;
-        margin-bottom: 16px;
+        padding: 1rem 2.5rem;;
+
 
     }
 }
