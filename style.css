@@ -26,7 +26,6 @@ body {
     flex-flow: row wrap;
     height: 100vh;
     min-width: 375px;
-    max-width: 1321px;
 }
 
 #image {
@@ -103,7 +102,7 @@ label {
 
 input {
     height: 28px;
-    width: calc(80% - 12px);
+    width: calc(90% - 2px);
     -webkit-box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.34);
     box-shadow: 4px 4px 6px 2px rgba(0, 0, 0, 0.34);
     border-radius: 0.5rem;
@@ -190,21 +189,25 @@ input:valid {
 }
 
 #footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     font-size: 1.5rem;
     background-color: var(--bg-color);
     width: 60vw;
-    display: flex;
-    flex-direction: column;
+    height: 18vh;
     border-radius: 1rem;
-    margin: 2rem;
+    padding-bottom: .5rem;
+    -webkit-box-shadow: 5px 6px 9px -3px #000000;
+    box-shadow: 5px 6px 9px -3px #000000;
+    margin:10px;
 }
 
 #submit {
     background-color: darkgreen;
     color: var(--bg-color);
     padding: 0.75rem 2.5rem;
-    margin: 1rem;
-    margin-bottom: 0;
     font-size: 1.5rem;
     border-radius: 1rem;
 }
@@ -225,6 +228,7 @@ input:valid {
 #login a {
     text-decoration: none;
 }
+
 
 @media (max-width: 768px) {
     .content {
@@ -249,7 +253,9 @@ input:valid {
 
     #sign-up {
         width: 100%;
+        height:fit-content;
         padding-left: 6px auto;
+
     }
 
     #title {
