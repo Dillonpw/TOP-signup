@@ -250,12 +250,12 @@ input:valid {
 
     #sign-up {
         width: 100%;
-        padding-left: 18px;
+        padding-left: 6cap;
     
     }
 
     #title {
-        padding: 1.4rem;
+        padding: 1.4rem 0;
         position: absolute;
         top:0;
         text-align: center;
