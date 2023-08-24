@@ -28,11 +28,6 @@ body {
 
 }
 
-#image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #title {
     color: white;
@@ -50,7 +45,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 34vw;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 #content-right {
