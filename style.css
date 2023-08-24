@@ -12,6 +12,8 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
+    min-width: 375px;
+
 }
 
 .content {
@@ -182,8 +184,8 @@ input:valid {
 #footer {
     font-size: 1.5rem;
     background-color: var(--bg-color);
-    width: 56vw;
-    padding-left: 0%;
+    width: 58vw;
+
 }
 
 #submit {
@@ -214,7 +216,7 @@ input:valid {
     text-decoration: none;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .content {
         flex-direction: column;
     
@@ -247,6 +249,15 @@ input:valid {
     }
 
     #footer{
-        width: 80vw
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2.5rem;
+    }
+
+    #submit{
+        padding: 1rem;
+        margin-bottom: 16px;
+
     }
 }
