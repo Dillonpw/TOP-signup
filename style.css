@@ -30,7 +30,7 @@ body {
     color: white;
     background-color: black;
     opacity: 50%;
-    font-size: 70px;
+    font-size: 60px;
     width: 100%;
     text-align: center;
     padding: 2rem;
@@ -216,8 +216,31 @@ input:valid {
 }
 
 @media (max-width: 375px) {
-    body {
-        display: flex;
+    .content {
         flex-direction: column;
+    }
+
+    #image {
+        width: 100vw;
+        height: 37vh;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #content-right {
+        width: 100vw;
+        height: 63vh;
+    }
+
+    #sign-up{
+        width:100%;
+    }
+
+    #title{
+        height: 100%;
+        width: 100%;
+
     }
 }
