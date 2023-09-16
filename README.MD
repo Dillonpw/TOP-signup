@@ -1,1 +1,2 @@
-The Odin Project sign up page. goal is to have several required fields and validate matching passwords. To begin I chose to build this with entirely tailwind but ran into trouble and decided to get the project out using vanilla css in the meantime.
+This project was original a design from The Odin Project curriculum.
+After completing it though, it seemed worthwhile to also break down into a resuable template form for future projects.
